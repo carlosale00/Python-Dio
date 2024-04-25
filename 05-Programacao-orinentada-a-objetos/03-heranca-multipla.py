@@ -1,5 +1,5 @@
 '''
-Heranças são recursos potentes na linguagem python, mais podem ocasionar do
+Heranças são recursos potentes na linguagem python, mais podem ocasionar do 
 seu código ficar extrememente complexo , USAR COM MODERAÇAO'''
 
 
@@ -13,13 +13,12 @@ class Animal:
 
 
 '''
-Esta sendo usada o argumento KWargs para receber os atributos da classe pai
-pois temos a classe Ornintorrinco que tem uma herança multipla com a classe
-Animal e Ave e na instância ela da erro pois aguarda a passagem os paramêtros
-delas.
+Esta sendo usada o argumento KWargs para receber os atributos da classe pai pois
+temos a classe Ornintorrinco que tem uma herança multipla com a classe Animal e 
+Ave e na instância ela da erro pois aguarda a passagem os paramêtros delas.  
 
-usando o KWargs ele vai receber n atributos sem gerar erro , mais a instância
-dos objetos devem ser passados nomeados, para nao causar erro
+usando o KWargs ele vai receber n atributos sem gerar erro , mais a instância 
+dos objetos devem ser passados nomeados, para nao causar erro 
 '''
 
 
