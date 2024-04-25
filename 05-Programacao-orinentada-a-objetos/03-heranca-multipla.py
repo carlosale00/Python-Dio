@@ -35,15 +35,7 @@ class Ave(Animal):
         self.cor_bico = cor_bico
 
 
-class Cachorro(Mamifero):
-    pass
-
-
 class Gato(Mamifero):
-    pass
-
-
-class Leao(Mamifero):
     pass
 
 
