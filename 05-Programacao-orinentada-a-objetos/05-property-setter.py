@@ -1,15 +1,3 @@
-"""
-Properties
-
-Com o property() do Python, você pode criar atributos
-gerenciados em suas classes. Você pode usar atributos
-gerenciados, também conhecidos como propriedades, quando
-precisar modificar sua implementação interna sem alterar a
-API pública da classe.
-
-"""
-
-
 class Foo():
     def __init__(self, x=None):
         self._x = x
@@ -26,7 +14,7 @@ class Foo():
 
     @x.deleter
     def x(self):
-        self._x -= 1
+        self._x = 0
 
 
 foo = Foo(80)
