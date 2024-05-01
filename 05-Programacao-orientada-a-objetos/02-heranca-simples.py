@@ -1,5 +1,5 @@
 '''Herança simples
-Herança é um mecanismo que a orientação a objeto provê, com objetivo de 
+Herança é um mecanismo que a orientação a objeto provê, com objetivo de
 facilitar o reaproveitamento de código. A idéia é que as classes sejam
 construídas formando uma hierarquia.
 '''
@@ -39,7 +39,7 @@ class Caminhao(Veiculo):
     def __init__(self, cor, placa, numero_rodas, carregado):
         self.carregado = carregado
 
-        ''' iniciando a classe pai, apara que a clase filha receba seus 
+        ''' iniciando a classe pai, apara que a clase filha receba seus
         atributos'''
         super().__init__(cor, placa, numero_rodas)
 
