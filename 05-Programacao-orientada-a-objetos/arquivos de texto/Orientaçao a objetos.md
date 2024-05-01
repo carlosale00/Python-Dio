@@ -81,3 +81,15 @@ class Motocicleta(Veiculo):
 Indica que a classe Motocicleta herda da classe Veiculo.<br>
 Invoca o método init da super classe (ou classe base, Veiculo).
 
+### [Classe super](https://docs.python.org/pt-br/3/library/functions.html#super):  
+Retorna um objeto proxy que delega chamadas de método a uma classe pai ou irmão do type. Isso é útil para acessar métodos herdados que foram substituídos em uma classe.
+
+### [Classe __mro __](https://docs.python.org/pt-br/3/library/stdtypes.html#class.__mro__): 
+Este atributo é uma tupla de classes que são consideradas ao procurar por classes bases durante resolução de métodos.
+
+Python tem duas funções embutidas que trabalham com herança:
+### [isinstance(object, classinfo)](https://docs.python.org/pt-br/3/library/functions.html#isinstance):
+ Retorna True se o argumento object é uma instância do argumento classinfo, ou de uma subclasse dele (direta, indireta ou virtual). Se object não é um objeto do tipo dado, a função sempre devolve False. Se classinfo é uma tupla de tipos de objetos (ou recursivamente, como outras tuplas) ou um Tipo União de vários tipos, retorna True se object é uma instância de qualquer um dos tipos. Se classinfo não é um tipo ou tupla de tipos ou outras tuplas, é levantada uma exceção TypeError. TypeError pode não ser levantada por um tipo inválido se uma verificação anterior for bem-sucedida
+
+### [issubclass(class, classinfo)](https://docs.python.org/pt-br/3/library/functions.html#isinstance):
+Retorna True se class for uma subclasse (direta, indireta ou virtual) de classinfo. Uma classe é considerada uma subclasse de si mesma. classinfo pode ser uma tupla de objetos de classe (ou recursivamente, outras tuplas) ou um Tipo União, caso em que retorna True se class for uma subclasse de qualquer entrada em classinfo. Em qualquer outro caso, é levantada uma exceção TypeError.
