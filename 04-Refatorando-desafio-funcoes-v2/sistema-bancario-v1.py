@@ -68,7 +68,7 @@ def criar_usuario(usuarios):
     nome = input("Informe o nome completo: ")
     data_nascimento = input("Informe a data de nascimento (dd-mm-aaaa): ")
     endereco = input(
-        "Informe o endereço (logradouro, nro - bairro - cidade/sigla estado): ")
+        "Informe o endereço (logradouro, nro - bairro - cidade/sigla estado):")
 
     usuarios.append({"nome": nome, "data_nascimento": data_nascimento,
                     "cpf": cpf, "endereco": endereco})
@@ -88,9 +88,11 @@ def criar_conta(agencia, numero_conta, usuarios):
 
     if usuario:
         print("\n=== Conta criada com sucesso! ===")
-        return {"agencia": agencia, "numero_conta": numero_conta, "usuario": usuario}
+        return {"agencia": agencia, "numero_conta":
+                numero_conta, "usuario": usuario}
 
-    print("\n@@@ Usuário não encontrado, fluxo de criação de conta encerrado! @@@")
+    print("\n@@@ Usuário não encontrado,\
+        fluxo de criação de conta encerrado! @@@")
 
 
 def listar_contas(contas):
@@ -171,7 +173,8 @@ deseja fazer um saque (s)sim ou (n)não?\n')
 
         else:
             print(
-                "Operação inválida, por favor selecione novamente a operação desejada.")
+                "Operação inválida, por favor selecione novamente a \
+                    operação desejada.")
 
 
 main()
