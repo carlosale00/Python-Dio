@@ -228,14 +228,7 @@ def recuperar_conta_cliente(cliente):
 
 
 def depositar(clientes):
-    cpf = input("Informe o CPF do cliente: ")
-    cliente = filtrar_cliente(cpf, clientes)
 
-    if not cliente:
-        print("\n@@@ Cliente não encontrado! @@@")
-        return
-
-    valor = float(input("Informe o valor do depósito: "))
     transacao = Deposito(valor)
 
     conta = recuperar_conta_cliente(cliente)
@@ -302,8 +295,8 @@ def criar_cliente(clientes):
     nome = input("Informe o nome completo: ")
     data_nascimento = input("Informe a data de nascimento (dd-mm-aaaa): ")
     endereco = input(
-        "Informe o endereço (logradouro, nro - bairro - cidade/sigla \
-    estado): ")
+        "Informe o endereço (logradouro, nro - bairro - cidade/sigla\
+estado): ")
 
     cliente = PessoaFisica(
         nome=nome, data_nascimento=data_nascimento, cpf=cpf, endereco=endereco)
@@ -314,6 +307,7 @@ def criar_cliente(clientes):
 
 
 def criar_conta(numero_conta, clientes, contas):
+
     cpf = input("Informe o CPF do cliente: ")
     cliente = filtrar_cliente(cpf, clientes)
 
@@ -343,7 +337,8 @@ def main():
     while True:
 
         if opcao == "d":
-            depositar(clientes)
+            valor = float(input("Informe o valor do depósito: "))
+            depositar(valor)
             opcao = menu(2)
 
         elif opcao == "s":
@@ -372,8 +367,9 @@ def main():
 
         else:
             print(
-                "\n@@@ Operação inválida, por favor selecione novamente \
-    a operação desejada. @@@")
+                "\n@@@ Operação inválida, por favor selecione novamente\
+a operação desejada. @@@")
+            break
 
 
 main()
