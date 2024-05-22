@@ -1,0 +1,1 @@
+link para a documentação [db api](https://peps.python.org/pep-0249/#introduction) para tirar duvidas
